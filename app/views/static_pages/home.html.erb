@@ -1,5 +1,4 @@
 <% if user_signed_in? %>
-  <%= link_to "ホムページ", "/static_pages/home" %>
   <p>こんにちは, <%= current_user.email %></p>
   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 <% else %>
