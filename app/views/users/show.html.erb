@@ -8,3 +8,8 @@
 <h3>年齢：
    <%= current_user.age %>
 </h3>
+<p>
+  <% if current_user.avatar.attached? %>
+    <%= image_tag current_user.avatar %>
+  <% end %>
+</p>
